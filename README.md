@@ -10,17 +10,6 @@ GIS-gestützte Standortanalyse für Berlin: Raum für neue Boulderhallen
 ## Projektbeschreibung und Zielsetzung
 Seit einigen Jahren gewinnt Bouldern, also das Klettern ohne Hilfsmittel in verhältnismäßig geringer Höhe, enorm an Beliebtheit. Insbesondere in Berlin ist die Nachfrage sehr groß, weshalb eine neue, gut gelegene Boulderhalle durchaus lukrativ laufen könnte. Ziel dieser Standortanalyse ist es, Bestandsgebäude innerhalb Berlins zu finden, welche potenziell zu einer Boulderhalle umgebaut werden könnten. Dabei soll die Analyse eher als Vorauswahl dienen, damit nachfolgend vor Ort die Verfügbarkeit und bauliche Eignung überprüft werden können.
 
-## Datengrundlage
-Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: ALKIS Berlin Gebäude. Web Feature Service (WFS), Layer alkis_gebaeude:gebaeude. Geoportal Berlin. Lizenz: Datenlizenz Deutschland - Zero 2.0. [21.11.2026]
-
-c OpenStreetMap-Mitwirkende: Standorte bestehender Boulderhallen Berlin. OpenStreetMap, Lizenz: Open Database License (ODbL) 1.0. [21.11.2026]
-
-VBB Verkehrsbund Berlin-Brandenburg GmbH: VBB-Fahrplandaten (GTFS), Datei stops.txt. Haltestellenkoordinaten des Verkehrsbundes Berlin-Brandenburg. Lizenz: Creative Commons Attribution 4.0 International (CC BY 4.0). [21.11.2026]
-
-Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: Lebensweltlich orientierte Räume (LOR), Planungsräume der seit 01.01.2021 geltenden Gebietsgliederung. [21.11.2026]
-
-Eigene Weiterverarbeitung und Verknüpfung der Daten in QGIS.
-
 ## Kriterien der Standortanalyse
 Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
 
@@ -28,15 +17,14 @@ Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
 
 2. Gebäudefunktion: Die vorhandene Nutzung muss geeignet sein. Das bedeutet, dass das Gebäude überwiegend gewerblich oder industriell genutzt werden sollte. Zum Einen, weil eine Boulderhalle letztlich ein gewerbliches Freizeitangebot ist, zum anderen aber auch, weil Industrie- und Gewerbegebäude häufig baulich geeigneter für eine Boulderhalle sind, als beispielsweise Wohngebäude.
 
-3. Konkurrenzsituation: Die Boulderhalle sollte mind. 2km vom nächsten Boulder- oder Kletterangebot entfernt sein, damit sie sich wirtschaftlich etablieren kann und idealerweise einen "Versorgungsengpass" stillt. 
+3. Konkurrenzsituation: Die Boulderhalle sollte mind. 2km (später auf 4km erweitert) vom nächsten Boulder- oder Kletterangebot entfernt sein, damit sie sich wirtschaftlich etablieren kann und idealerweise einen "Versorgungsengpass" stillt. 
 
 4. ÖPNV-Anbindung: Die nächste Haltestelle sollte maximal 500m von der Boulderhalle entfernt sein, um die Erreichbarkeit sicherzustellen.
 
 5. Demografisches Nachfragepotenzial: Bei einer Aufteilung in Quantile der Bevölkerungsdichte von 15- bis 45-Jährigen sollte die Boulderhalle entweder in oder 500m entfernt von einem Raum der oberen 40% liegen.
 
-6. Bauliche Eignung und Verfügbarkeit: Gebäudehöhe, Innenraumhöhe, Eigentumsverhältnisse, Baurecht etc. Dies ist kein Teil der GIS-gestützten Standortanalyse mehr.
+6. Bauliche Eignung und Verfügbarkeit: Gebäudehöhe, Innenraumhöhe, Eigentumsverhältnisse, Baurecht etc. Dies ist kein Teil der GIS-gestützten Standortanalyse mehr und sollte direkt vor Ort und mit Eigenrecherche individuell für jedes Gebäude geschehen.
 
-Während der Bearbeitung ist aufgefallen, dass trotz dieser Kriterien noch knapp 160 Gebäude bei Beendigung der Analyse als nächster Boulderhallenstandort infrage kamen. Da dies für eine händische Bewertung noch zu viele sind, habe ich das dritte Kriterium, die Konkurrenzsituation, auf 4km Luftlinie bis zur nächsten Boulderhalle angepasst und so die potenziellen Gebäude auf 41 verringert. Sollte sich unter diesen bei der Bewertung vor Ort keines als geeignet herausstellen, halte ich es für sinnvoll, eben dieses dritte Kriterium wieder nach unten hin anzupassen.
 
 ![Kriterien](Kriterien_Standortanalyse_Boulderhalle.png)
 [Die Karte als PDF ansehen](Kriterien_Standortanalyse_Boulderhalle.pdf)
@@ -55,8 +43,35 @@ Im nächsten Schritt habe ich die Einwohnerregisterdaten von 2024 mit den Berlin
 
 Letztendlich blieben nach der schrittweisen Kombination und auch Anpassung aller Kriterien 41 potenziell geeignete Gebäude. Da diese mithilfe räumlicher Selektion ausgewählt wurden, blieben ihre Grundrisse vollständig erhalten.
 
-Teilweise eliminierten einzelne Kriterien weitaus weniger Gebäude, als ich zunächst angenommen hatte. So hat das Kriterium der Erreichbarkeit von Haltestellen nur ungefähr 25 Gebäude als Standort ausgeschlossen. Dies liegt an der großen Anzahl der Haltestellen, da ich undifferenziert alle übernommen habe. Als Verbesserung würde ich nächstes Mal wahrscheinlich zwischen den verschiedenen Verkehrsmitteln des ÖPNV unterscheiden, um hier ein aussagekräftigeres Ergebnis zu erhalten. 
+### Problematik und Grenzen der Analyse
+Teilweise eliminierten einzelne Kriterien weitaus weniger Gebäude, als ich zunächst angenommen hatte. So hat das Kriterium der Erreichbarkeit von Haltestellen nur ungefähr 25 Gebäude als Standort ausgeschlossen. Dies liegt an der großen Anzahl der Haltestellen, da ich undifferenziert alle übernommen habe. Als Verbesserung würde ich nächstes Mal wahrscheinlich zwischen den verschiedenen Verkehrsmitteln des ÖPNV unterscheiden, um hier ein aussagekräftigeres Ergebnis zu erhalten.
+
+Während der Bearbeitung ist außerdem aufgefallen, dass trotz aller Kriterien noch knapp 160 Gebäude bei Beendigung der Analyse als nächster Boulderhallenstandort infrage kamen. Da dies für eine händische Bewertung noch zu viele sind, habe ich das dritte Kriterium, die Konkurrenzsituation, auf 4km Luftlinie bis zur nächsten Boulderhalle angepasst und so die potenziellen Gebäude auf 41 verringert. Sollte sich unter diesen bei der Bewertung vor Ort keines als geeignet herausstellen, halte ich es für sinnvoll, eben dieses dritte Kriterium wieder nach unten hin anzupassen.
+
+Ursprünglich hatte ich zudem auch geplant die Gebäudehöhe bzw. innere Raumhöhe in QGIS zu beachten. Jedoch habe ich hierfür keinen entsprechenden und insbesondere vollständigen Datensatz gefunden, dieses Kriterium also wieder verworfen. Ein ähnliches Problem hatte ich, als ich die momentane Nutzung und somit vielleicht lerrstehende und ungenutzte Gebäude herausfinden wollte: Auch hierzu habe ich keine zufriedenstellenden Daten gefunden.
+
+Dennoch konnte ich mit den genutzten Daten durchaus eine Vorauswahl treffen.
 
 ## Ergebnis der Standortanalyse
 ![Standortanalyse Berlin](Standortanalyse_Boulderhalle_Berlin.png)
 [Die Karte als PDF ansehen](Standortanalyse_Boulderhalle_Berlin.pdf)
+Das Ergebnis meiner Analyse sind 41 potenzielle Standorte für eine Boulderhalle in Form von Bestandsgebäuden. 
+
+Auffällig ist hierbei, dass diese eher wenig einzeln in Berlin verteilt sind, sondern eher "Cluster" bilden, was vermutlich an der Auswahl der Gebäudefunktion liegt, da mehrere flächenmäßig größere Gebäude eben typisch für Gewerbe- und Industrieflächen sind. Herausstechen tut hier insbesondere das Gewerbegebiet Quickborner Straße im Norden der Stadt, da es, anders als andere potenzielle Standorte, nicht zwischen mehreren schon bestehenden Boulder- und Kletterhallen liegt und deshalb durchaus eine Angebotslücke darstellen könnte.
+
+Das GIS-Verfahren eignet sich meiner Meinung nach durchaus zu einer Vorauswahl für potenzielle Standpunkte, birgt aber eben auch die Gefahr, durchaus gut gelegene Standorte durch einen schnellen Ausschluss zu übersehen. 
+
+Des Weiteren reicht die Standortanalyse selbstverständlich nicht aus, um wirklich einen passenden Standort zu finden, da zu viele wichtige Kriterien weiterhin offen bleiben: Sind die Räume im Gebäude hoch genug? Darf umgebaut werden? Ist das Gebäude frei?
+
+Als nächsten Schritt müsste man nun also die einzelnen Gebäude ihrer Tauglichkeit nach bewerten. Und hierfür liefert die Standortanalyse bereits eine solide Grundlage.
+
+## Datengrundlage
+Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: ALKIS Berlin Gebäude. Web Feature Service (WFS), Layer alkis_gebaeude:gebaeude. Geoportal Berlin. Lizenz: Datenlizenz Deutschland - Zero 2.0. [21.11.2026]
+
+c OpenStreetMap-Mitwirkende: Standorte bestehender Boulderhallen Berlin. OpenStreetMap, Lizenz: Open Database License (ODbL) 1.0. [21.11.2026]
+
+VBB Verkehrsbund Berlin-Brandenburg GmbH: VBB-Fahrplandaten (GTFS), Datei stops.txt. Haltestellenkoordinaten des Verkehrsbundes Berlin-Brandenburg. Lizenz: Creative Commons Attribution 4.0 International (CC BY 4.0). [21.11.2026]
+
+Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: Lebensweltlich orientierte Räume (LOR), Planungsräume der seit 01.01.2021 geltenden Gebietsgliederung. [21.11.2026]
+
+Eigene Weiterverarbeitung und Verknüpfung der Daten in QGIS.
