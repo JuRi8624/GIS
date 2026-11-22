@@ -55,6 +55,7 @@ Dennoch konnte ich mit den genutzten Daten durchaus eine Vorauswahl treffen.
 ## Ergebnis der Standortanalyse
 ![Standortanalyse Berlin](Standortanalyse_Boulderhalle_Berlin.png)
 [Die Karte als PDF ansehen](Standortanalyse_Boulderhalle_Berlin.pdf)
+
 Das Ergebnis meiner Analyse sind 41 potenzielle Standorte für eine Boulderhalle in Form von Bestandsgebäuden. 
 
 Auffällig ist hierbei, dass diese eher wenig einzeln in Berlin verteilt sind, sondern eher "Cluster" bilden, was vermutlich an der Auswahl der Gebäudefunktion liegt, da mehrere flächenmäßig größere Gebäude eben typisch für Gewerbe- und Industrieflächen sind. Herausstechen tut hier insbesondere das Gewerbegebiet Quickborner Straße im Norden der Stadt, da es, anders als andere potenzielle Standorte, nicht zwischen mehreren schon bestehenden Boulder- und Kletterhallen liegt und deshalb durchaus eine Angebotslücke darstellen könnte.
