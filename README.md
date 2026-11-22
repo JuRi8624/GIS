@@ -28,7 +28,7 @@ Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
 
 2. Gebäudefunktion: Die vorhandene Nutzung muss geeignet sein. Das bedeutet, dass das Gebäude überwiegend gewerblich oder industriell genutzt werden sollte. Zum Einen, weil eine Boulderhalle letztlich ein gewerbliches Freizeitangebot ist, zum anderen aber auch, weil Industrie- und Gewerbegebäude häufig baulich geeigneter für eine Boulderhalle sind, als beispielsweise Wohngebäude.
 
-3. Konkurrenzsituation: Die Boulderhalle sollte mind. 2km vom nächsten Boulder- oder Kletterangebot entfernt sein, damit sie sich wirtschaftlich etablieren kann und idealerweise einen "Versorgungsengpass" stillt.
+3. Konkurrenzsituation: Die Boulderhalle sollte mind. 2km vom nächsten Boulder- oder Kletterangebot entfernt sein, damit sie sich wirtschaftlich etablieren kann und idealerweise einen "Versorgungsengpass" stillt. 
 
 4. ÖPNV-Anbindung: Die nächste Haltestelle sollte maximal 500m von der Boulderhalle entfernt sein, um die Erreichbarkeit sicherzustellen.
 
@@ -36,10 +36,12 @@ Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
 
 6. Bauliche Eignung und Verfügbarkeit: Dies ist kein Bestandteil der GIS-gestützten Standortanalyse mehr. Die Idee ist, dass man zum Schluss vor Ort die einzelnen Gebäude nach ihrer inneren Raumhöhe, Geometrie und Verfügbarkeit individuell bewerten kann.
 
+Während der Bearbeitung ist aufgefallen, dass trotz dieser Kriterien noch knapp 160 Gebäude bei Beendigung der Analyse als nächster Boulderhallenstandort infrage kamen. Da dies für eine händische Bewertung noch zu viele sind, habe ich das dritte Kriterium, die Konkurrenzsituation auf 4km bis zur nächsten Boulderhalle angepasst und die potenziellen Gebäude auf 41 verringert. Sollte sich unter diesen bei der fiktiven Bewertung vor Ort keines als geeignet herausstellen, halte ich es für sinnvoll, eben dieses dritte Kriterium wieder nach unten hin anzupassen.
+
 ![Kriterien](Kriterien_Standortanalyse_Boulderhalle.png)
 [Die Karte als PDF ansehen](Kriterien_Standortanalyse_Boulderhalle.pdf)
 
-
+## Methodisches Vorgehen
 ## Ergebnis der Standortanalyse
 ![Standortanalyse Berlin](Standortanalyse_Boulderhalle_Berlin.png)
 [Die Karte als PDF ansehen](Standortanalyse_Boulderhalle_Berlin.pdf)
