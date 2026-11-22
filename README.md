@@ -30,7 +30,7 @@ Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
 [Die Karte als PDF ansehen](Kriterien_Standortanalyse_Boulderhalle.pdf)
 
 ## Methodisches Vorgehen
-Da es das Ziel dieser STandortanalyse ist, geeignete Bestandsgebäude zu finden, habe ich als erstes die ALKIS-Gebäudedaten über einen WFS in QGIS eingebunden alle Gebäude mit einer Grundfläche von 2000m² oder mehr ausgewählt. 
+Da es das Ziel dieser Standortanalyse ist, geeignete Bestandsgebäude zu finden, habe ich als erstes die ALKIS-Gebäudedaten über einen WFS in QGIS eingebunden alle Gebäude mit einer Grundfläche von 2000m² oder mehr ausgewählt. 
 
 Die nächste Einschränkung erfolgte anschließend über die Gebäudefunktion: Hier habe ich wieder nur die Gebäude, welche überwiegend gewerblich oder industriell genutzt werden, ausgewählt. 
 Daraus ergab sich dann ein erheblich reduzierter Datensatz mit überwiegend Lagerhallen, Werkstätten, Fabriken oder anders genutzten Gewerbeflächen.
