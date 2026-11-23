@@ -11,7 +11,7 @@ GIS-gestützte Standortanalyse für Berlin: Raum für neue Boulderhallen
 Seit einigen Jahren gewinnt Bouldern, also das Klettern ohne Hilfsmittel in verhältnismäßig geringer Höhe, enorm an Beliebtheit. Insbesondere in Berlin ist die Nachfrage sehr groß, weshalb eine neue, gut gelegene Boulderhalle durchaus lukrativ laufen könnte. Ziel dieser Standortanalyse ist es, Bestandsgebäude innerhalb Berlins zu finden, welche potenziell zu einer Boulderhalle umgebaut werden könnten. Dabei soll die Analyse eher als Vorauswahl dienen, damit nachfolgend vor Ort die Verfügbarkeit und bauliche Eignung überprüft werden kann.
 
 ## Kriterien der Standortanalyse
-Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert.
+Für die Standortanalyse in QGIS wurde sich auf fünf Kriterien fokussiert, zusätzlich ist noch ein sechstes Kriterium angedacht.
 
 1. Gebäudegrundfläche: Die Fläche des Bestandgebäudes, in welche die Boulderhalle gebaut werden soll, beträgt mindestens 2000m². Dies ist daraus abgeleitet, dass Boulderhallen im Schnitt eine Fläche von 1500m² bis 3000m² haben.
 
@@ -74,5 +74,7 @@ c OpenStreetMap-Mitwirkende: Standorte bestehender Boulderhallen Berlin. OpenStr
 VBB Verkehrsbund Berlin-Brandenburg GmbH: VBB-Fahrplandaten (GTFS), Datei stops.txt. Haltestellenkoordinaten des Verkehrsbundes Berlin-Brandenburg. Lizenz: Creative Commons Attribution 4.0 International (CC BY 4.0). [21.11.2026]
 
 Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: Lebensweltlich orientierte Räume (LOR), Planungsräume der seit 01.01.2021 geltenden Gebietsgliederung. [21.11.2026]
+
+Amt für Statistik Berlin-Brandenburg: Einwohnerregisterstatistik Berlin, Einwohnerinnen und Einwohner in Lebensweltlich orientierten Räumen (LOR), Stand 31.12.2024. [21.11.2026]
 
 Eigene Weiterverarbeitung und Verknüpfung der Daten in QGIS.
