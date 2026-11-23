@@ -75,6 +75,6 @@ VBB Verkehrsbund Berlin-Brandenburg GmbH: VBB-Fahrplandaten (GTFS), Datei stops.
 
 Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin: Lebensweltlich orientierte Räume (LOR), Planungsräume der seit 01.01.2021 geltenden Gebietsgliederung. [21.11.2026]
 
-Amt für Statistik Berlin-Brandenburg: Einwohnerregisterstatistik Berlin, Einwohnerinnen und Einwohner in Lebensweltlich orientierten Räumen (LOR), Stand 31.12.2024. [21.11.2026]
+Amt für Statistik Berlin-Brandenburg: Einwohnerregisterstatistik Berlin, Einwohnerinnen und Einwohner in Lebensweltlich orientierten Räumen (LOR), verwendeter Datensatz: EWR_L21_202412E_Matrix.csv, Stand 31.12.2024. [21.11.2026]
 
 Eigene Weiterverarbeitung und Verknüpfung der Daten in QGIS.
